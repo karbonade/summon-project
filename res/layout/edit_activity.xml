@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_container"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:padding="5dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_event_logo"
+	        android:layout_width="100dp"
+	    	android:layout_height="100dp"
+	    	android:layout_marginRight="3dp"
+	    	android:layout_centerVertical="true"
+	    	android:src="@drawable/ic_launcher"
+            />
+        <TextView 
+            android:id="@+id/tv_event_title"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@+id/iv_event_logo"
+	    	android:layout_alignTop="@+id/iv_event_logo"
+	    	android:textStyle="bold"
+	    	android:textSize="20sp"
+	    	android:text="@string/event_title"
+            />
+        <TextView 
+            android:id="@+id/tv_event_desc"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@+id/iv_event_logo"
+	    	android:layout_below="@+id/tv_event_title"
+	    	android:textSize="14sp"
+	    	android:text="@string/event_desc"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/selection_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_details_container"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_border"/>
+    
+</RelativeLayout>
