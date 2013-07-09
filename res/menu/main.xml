@@ -1,7 +1,4 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item android:id="@+id/menu_subscribe"
-          android:title="@string/subscribe"
-          android:showAsAction="never" />
-    
+        
 </menu>
